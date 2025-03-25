@@ -5,12 +5,13 @@ require 'uri'
 module Spree
   module Admin
     class Updater
-      SPREE_CLOUD_UPDATES_URL = 'https://spreecloud.io/updates.json'
+      SPREE_CLOUD_UPDATES_URL = 'https://wtf.com'#'https://spreecloud.io/updates.json'
 
       @updates = nil
 
       def self.update_available?
-        fetch_updates.any?
+        #fetch_updates.any?
+        nil
       end
 
       def self.fetch_updates
